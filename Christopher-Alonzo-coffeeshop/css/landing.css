@@ -1,0 +1,48 @@
+h3,
+nav h2,
+footer h3 {
+  font-size: 33px;
+  font-weight: 300;
+}
+
+nav ul li a,
+button {
+  font-size: 21px;
+  font-weight: 400;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+.discount-text {
+  font-size: 45px;
+  font-weight: 400;
+}
+
+.discount-code {
+  font-weight: 700;
+}
+
+.discount-banner {
+  width: 90%;
+  background-color: var(--graphite);
+  color: white;
+  text-align: center;
+  margin: 0
+}
+
+button {
+  background-color: var(--nitro-blue);
+  color: white;
+}
+
+.pink-container {
+    width: 100%;
+    background-color: var(--nitro-pink);
+}
+
+.price {
+    color: var(--nitro-blue);
+    font-size: 33px;
+}
