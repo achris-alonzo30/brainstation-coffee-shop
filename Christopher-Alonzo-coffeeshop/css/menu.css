@@ -1,20 +1,48 @@
-:root {
-  --nitro-blue: #5bacc3;
-  --nitro-pink: #fff0ed;
-  --neutral-light-gray: #f7f7f7;
-  --neutral-white: #fff;
-  --graphite: #393939;
+/* --------------------------- Elements CSS ------------------------- */
+
+/* --------------------------- Headers CSS --------------------------- */
+header {
+  background-color: var(--nitro-pink);
+  width: 100vw;
+  display: flex;
+  padding: 20px;
 }
 
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.header-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding-top: 0.9rem;
+}
+
+.header-nav-links li a:hover {
+  color: var(--nitro-blue)
+}
+
+.header-nav-links li:nth-child(3) a {
+  color: var(--nitro-blue);
+}
+
+.header-nav-links li:nth-child(3) a:hover {
+  color: var(--graphite);
+}
+
+/* --------------------------- Headers CSS --------------------------- */
 h1,
 h2 {
-  font-size: 60px;
+  font-size: 6rem;
   font-weight: 300;
 }
 
 h3,
 nav h1 {
-  font-size: 33px;
+  font-size: 3.3rem;
   font-weight: 300;
 }
 
@@ -23,17 +51,19 @@ nav ul {
 }
 
 nav ul li a {
-  font-size: 21px;
+  font-size: 2.1rem;
   font-weight: 400;
+  text-decoration: none;
+  color: var(--graphite);
 }
 
 p {
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 400;
 }
 
 .p-italic {
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 400;
   font-style: italic;
 }
@@ -42,38 +72,37 @@ p {
   width: 300px;
   height: 200px;
   background-color: var(--graphite);
+  text-align: center;
+  color: white;
+  margin: 0 auto;
 }
 
 .hero {
   width: 100%;
   height: 700px;
-  background-image: url(../assets/Assets/coffee-circle.jpg);
+  background-image: url(../assets/images/coffee-circle.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.menu {
-  width: 300px;
-  height: 200px;
-  background-color: var(--graphite);
-  text-align: center;
-  color: white;
-}
-
 .sub-nav {
-  text-align: center;
   width: 100%;
+  height: 80px;
   background-color: var(--graphite);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.sub-nav ul li a {
-  text-decoration: none;
+.sub-nav-links {
+  display: flex;
+}
+
+.sub-nav-links li a {
   color: white;
-}
-
-.sub-nav ul li a:hover {
-  color: var(--nitro-blue);
+  border-left: 4px solid var(--nitro-blue);
+  padding: 0px 20px 0px 20px;
 }
 
 
@@ -82,8 +111,9 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top:50px;
-  margin-bottom: 50px;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
 }
 
 .card-container:nth-child(odd) {
@@ -98,19 +128,16 @@ p {
     Instead of using a className here. 
     I want to use what I learned in class which is Child Selectors 
 */
-section > h2 {
-  text-align: center;
-  margin-top: 0;
-}
-
 article > h3 {
   text-align: center;
 }
 
+
 .menu-description {
-  width: 33%;
   text-align: center;
   display: block;
+  margin: 0 auto;
+  width: 50%;
 }
 
 .menu-price {

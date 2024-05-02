@@ -1,13 +1,14 @@
 h3,
 nav h2,
 footer h3 {
-  font-size: 33px;
+  font-size: 3.3rem;
   font-weight: 300;
 }
 
+
 nav ul li a,
 button {
-  font-size: 21px;
+  font-size: 2.1rem;
   font-weight: 400;
 }
 
@@ -15,8 +16,13 @@ nav ul {
   list-style-type: none;
 }
 
+button > a {
+  text-decoration: none;
+  color: white;
+}
+
 .discount-text {
-  font-size: 45px;
+  font-size: 4.5rem;
   font-weight: 400;
 }
 
@@ -44,5 +50,5 @@ button {
 
 .price {
     color: var(--nitro-blue);
-    font-size: 33px;
+    font-size: 3.3rem;
 }

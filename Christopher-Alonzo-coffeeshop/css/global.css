@@ -6,24 +6,39 @@
   --graphite: #393939;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
+  font-size: 1.6rem;
+
 }
 
 h1,
 h2 {
-  font-size: 60px;
+  font-size: 6rem;
   font-weight: 300;
 }
 
 .p {
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 400;
 }
 
 .p-italic {
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 400;
   font-style: italic;
 }
