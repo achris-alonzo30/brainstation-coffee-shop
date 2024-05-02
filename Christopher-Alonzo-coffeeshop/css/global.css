@@ -1,3 +1,4 @@
+/* --------------------------- Color Variables CSS --------------------------- */
 :root {
   --nitro-blue: #5bacc3;
   --nitro-pink: #fff0ed;
@@ -5,6 +6,8 @@
   --neutral-white: #fff;
   --graphite: #393939;
 }
+
+/* --------------------------- Elements CSS --------------------------- */
 
 * {
   box-sizing: border-box;
@@ -16,14 +19,12 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-
 }
 
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
-
 }
 
 h1,
@@ -32,7 +33,25 @@ h2 {
   font-weight: 300;
 }
 
-.p {
+h3,
+.header-nav h1 {
+  font-size: 3.3rem;
+  font-weight: 300;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li a,
+button {
+  font-size: 2.1rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--graphite);
+}
+
+p {
   font-size: 1.8rem;
   font-weight: 400;
 }
@@ -41,4 +60,50 @@ h2 {
   font-size: 1.8rem;
   font-weight: 400;
   font-style: italic;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+/* --------------------------- Headers CSS --------------------------- */
+header {
+  background-color: var(--nitro-pink);
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.header-nav > h1 {
+  font-size: 3.3em;
+}
+
+.header-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  
+}
+
+.header-nav-links li {
+  padding-top: 2.5rem;
+}
+
+.header-nav-links li a:hover {
+  color: var(--nitro-blue)
+}
+
+.header-nav-links li:nth-child(3) a {
+  color: var(--nitro-blue);
+}
+
+.header-nav-links li:nth-child(3) a:hover {
+  color: var(--graphite);
 }

@@ -1,72 +1,6 @@
-/* --------------------------- Elements CSS ------------------------- */
+
 
 /* --------------------------- Headers CSS --------------------------- */
-header {
-  background-color: var(--nitro-pink);
-  width: 100vw;
-  display: flex;
-  padding: 20px;
-}
-
-.header-nav {
-  display: flex;
-  align-items: center;
-  gap: 4rem;
-}
-
-.header-nav-links {
-  display: flex;
-  align-items: center;
-  gap: 4rem;
-  padding-top: 0.9rem;
-}
-
-.header-nav-links li a:hover {
-  color: var(--nitro-blue)
-}
-
-.header-nav-links li:nth-child(3) a {
-  color: var(--nitro-blue);
-}
-
-.header-nav-links li:nth-child(3) a:hover {
-  color: var(--graphite);
-}
-
-/* --------------------------- Headers CSS --------------------------- */
-h1,
-h2 {
-  font-size: 6rem;
-  font-weight: 300;
-}
-
-h3,
-nav h1 {
-  font-size: 3.3rem;
-  font-weight: 300;
-}
-
-nav ul {
-  list-style-type: none;
-}
-
-nav ul li a {
-  font-size: 2.1rem;
-  font-weight: 400;
-  text-decoration: none;
-  color: var(--graphite);
-}
-
-p {
-  font-size: 1.8rem;
-  font-weight: 400;
-}
-
-.p-italic {
-  font-size: 1.8rem;
-  font-weight: 400;
-  font-style: italic;
-}
 
 .title-box {
   width: 300px;
@@ -130,6 +64,7 @@ p {
 */
 article > h3 {
   text-align: center;
+  font-size: 3.3rem;
 }
 
 
