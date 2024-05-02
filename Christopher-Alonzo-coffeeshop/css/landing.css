@@ -9,19 +9,36 @@ button {
   color: white;
   width: 180px;
   padding: 20px;
-  border: 0
+  border: 0;
 }
 
 button:hover {
   opacity: 0.9;
 }
 
-/* --------------------------- Header CSS --------------------------- */
-.header-landing {
-  margin-bottom: 4rem;
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0px 60px 0px;
 }
 
 /* --------------------------- Discount Banner CSS --------------------------- */
+.article-banner {
+  margin-top: 140px;
+  margin-bottom: 140px;
+}
+
+.article-banner section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  
+}
+
 .discount-text {
   font-size: 4.5rem;
   font-weight: 400;
@@ -32,51 +49,64 @@ button:hover {
 }
 
 .discount-banner {
-  width: 90%;
   background-color: var(--graphite);
   color: white;
   text-align: center;
-  margin: 0 0 4rem;
+  padding: 40px;
 }
 
 /* --------------------------- Selector CSS --------------------------- */
 .pink-container {
-    width: 100%;
-    background-color: var(--nitro-pink);
+  width: 100%;
+  background-color: var(--nitro-pink);
 }
 
-section.pink-container {
-  margin-bottom: 4rem;
+.hero {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 100px 100px 100px 100px;
 }
 
-section.pink-container p {
-  margin-bottom: 1rem;
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
 }
 
-.pink-container > h1 {
-  margin-bottom: 4rem;
+.hero-text p {
+  text-align: justify;
+  width: 50%;
+  letter-spacing: -1px;
 }
 
 /* --------------------------- Products CSS --------------------------- */
-
+.article-product {
+  width: 100%;
+  background-color: var(--neutral-light-gray);
+}
 .price {
-    color: var(--nitro-blue);
-    font-size: 3.3rem;
+  color: var(--nitro-blue);
+  font-size: 3.3rem;
 }
 
 .products {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px 20px 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 20px 40px;
 }
 .product-card {
   width: 330px;
   height: 440px;
   padding: 20px;
   margin: 20px;
-  border-radius:10px;
+  border-radius: 10px;
   box-shadow: 0 5px 9px -1px;
   box-shadow: rgba(0, 0, 0, 0.25);
   display: flex;
@@ -88,19 +118,17 @@ section.pink-container p {
 }
 
 /* --------------------------- Footer CSS --------------------------- */
-
-.footer-sections {
-  margin: 0 0 4rem;
+footer.pink-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 60px 60px 60px;
+  gap: 14rem;
 }
+
 
 .footer-sections h3 {
-  margin-bottom: 4rem;
-}
-
-.footer-sections p {
   margin-bottom: 2rem;
 }
 
-.footer-sections:nth-child(3) {
-  margin-bottom: 0;
-}
