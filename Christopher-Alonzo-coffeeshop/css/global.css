@@ -8,13 +8,11 @@
 }
 
 /* --------------------------- Elements CSS --------------------------- */
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
 
 html {
   font-size: 62.5%;
@@ -51,7 +49,6 @@ button {
   color: var(--graphite);
 }
 
-
 p {
   font-size: 1.8rem;
   font-weight: 400;
@@ -70,31 +67,24 @@ nav ul {
 /* --------------------------- Headers CSS --------------------------- */
 header {
   background-color: var(--nitro-pink);
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  padding: 20px;
+  width: 100%;
+  padding: 2rem;
 }
 
-.header-nav {
-  display: flex;
-  align-items: center;
-  gap: 5rem;
+header nav {
+  display: inline-block;
 }
 
-.header-nav > h1 {
+header nav h1 {
+  display: inline-block;
   font-size: 3.3em;
+  padding-right: 2rem;
 }
 
-.header-nav-links {
-  display: flex;
-  align-items: center;
-  gap: 5rem;
-  
-}
-
-.header-nav-links li {
-  padding-top: 2.5rem;
+header nav ul li {
+  display: inline-block;
+  vertical-align: bottom;
+  padding: 0 2rem;
 }
 
 .header-nav-links li a:hover {
@@ -108,3 +98,13 @@ header {
 .header-nav-links li:nth-child(3) a:hover {
   color: var(--graphite);
 }
+
+
+
+
+
+
+
+
+
+
