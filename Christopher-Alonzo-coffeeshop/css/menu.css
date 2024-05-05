@@ -72,8 +72,8 @@ article > h3 {
 
 
 .menu__item-description {
-  width: 25%;
   margin: 0 auto;
+  width: 30%;
 }
 
 .menu__item-price {

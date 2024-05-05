@@ -75,10 +75,15 @@ header nav {
   display: inline-block;
 }
 
+header nav a {
+  text-decoration: none;
+}
+
 header nav h1 {
   display: inline-block;
   font-size: 3.3em;
   padding-right: 2rem;
+  color: var(--graphite);
 }
 
 header nav ul li {
