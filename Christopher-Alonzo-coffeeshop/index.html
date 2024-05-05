@@ -14,6 +14,7 @@
   <body>
     <!------------------------------- Header Section ------------------------------->
     <header class="header-landing">
+      <!------------ Header Logo --------------->
       <nav class="header-nav-logo">
         <a href="../index.html">
           <img
@@ -23,12 +24,10 @@
           />
           <h1>nitro</h1>
         </a>
-        
       </nav>
-
-      <nav class="header-nav">
-        
-        <ul class="header-nav-links">
+      <!------------ Header Links --------------->
+      <nav class="header__nav">
+        <ul class="header__nav--links">
           <li>
             <a href="./index.html"> ABOUT </a>
           </li>
@@ -44,7 +43,7 @@
 
     <!------------------------------- Hero Section ------------------------------->
     <main class="hero__container">
-      <section class="hero__container-pink">
+      <section class="hero__container--pink">
         <div class="hero__contents">
           <h1 id="menu">Nitro Coffee</h1>
           <p>
@@ -68,8 +67,8 @@
               alt="coffee beans"
               height="280"
             />
-            <h3 class="products__card-title">Coffee Beans</h3>
-            <p class="products__card-price">$18.99</p>
+            <h3 class="products__card--title">Coffee Beans</h3>
+            <p class="products__card--price">$18.99</p>
           </section>
 
           <section class="products__card">
@@ -78,8 +77,8 @@
               alt="cold brew"
               height="280"
             />
-            <h3 class="products__card-title">Cold Brew</h3>
-            <p class="products__card-price">$4.99</p>
+            <h3 class="products__card--title">Cold Brew</h3>
+            <p class="products__card--price">$4.99</p>
           </section>
 
           <section class="products__card">
@@ -88,8 +87,8 @@
               alt="in-house brew"
               height="280"
             />
-            <h3 class="products__card-title">In-house Brew</h3>
-            <p class="products__card-price">$2.99</p>
+            <h3 class="products__card--title">In-house Brew</h3>
+            <p class="products__card--price">$2.99</p>
           </section>
         </section>
 
@@ -101,10 +100,10 @@
 
       <!------------------------------- Discount Banner Section --------------------------------->
       <article class="discount__banner">
-        <section class="discount__banner-color">
-          <p class="discount__banner-text">
+        <section class="discount__banner--color">
+          <p class="discount__banner--text">
             Get 20% off your first order with code:
-            <span class="discount__banner-code"> FirstNitro </span>
+            <span class="discount__banner--code"> FirstNitro </span>
           </p>
         </section>
       </article>
@@ -113,12 +112,14 @@
 
     <!------------------------------- Footer Section ------------------------------->
     <footer class="footer__container">
-      <section class="footer__container-section">
+
+      <section id="address" class="footer__container--section">
         <h3>Address</h3>
         <p>503 Broadway Penthouse</p>
         <p>New York</p>
       </section>
-      <section class="footer__container-section">
+
+      <section id="hours" class="footer__container--section">
         <h3>Hours</h3>
         <p>
           <b>Monday - Friday:</b> 
@@ -129,7 +130,8 @@
           10am - 5pm
         </p>
       </section>
-      <section class="footer__container-section">
+
+      <section id="social-links" class="footer__container--section">
         <h3>Social</h3>
         <span>
           <a href="https://www.facebook.com" target="_blank">
