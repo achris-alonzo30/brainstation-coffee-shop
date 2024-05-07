@@ -1,3 +1,5 @@
+@use './partials/global' as *;
+
 /* --------------------------- Hero Section CSS --------------------------- */
 .hero {
   width: 100%;
@@ -8,17 +10,30 @@
   background-size: cover;
   display: flex;
   justify-content: center;
+  align-items:center;
+}
+
+.hero__title-container {
+  position: relative;
 }
 
 .hero__title-box {
+  position: absolute;
+  width: 30rem;
+  height: 100%;
+  bottom: 15px;
+  right: 15px;
+  border: 5px solid var(--nitro-blue);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__title-backdrop {
   width: 300px;
   height: 200px;
   background-color: var(--graphite);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: top;
-  align-items: center;
 }
 
 /* --------------------------- Hero Sub Nav Section CSS --------------------------- */

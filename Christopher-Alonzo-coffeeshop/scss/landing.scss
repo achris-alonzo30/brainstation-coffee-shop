@@ -1,0 +1,330 @@
+@use "./partials/global" as *;
+
+/* --------------------------- Landing Page Elements CSS --------------------------- */
+
+.hero__button--wrapper {
+  position: relative;
+}
+
+.hero__button--copy {
+  position: absolute;
+  padding: 2.8rem;
+  width: 18rem;
+  background-color: var(--nitro-blue);
+  top: 5px;
+  left: 5px;
+  border: 0;
+}
+
+.hero__button--orginal {
+  background-color: transparent;
+  color: white;
+  width: 18rem;
+  padding: 1.5rem;
+  border: 2px solid var(--graphite);
+  position: absolute;
+}
+
+.hero__button--orginal--animation:active {
+  transform: translate(5px, 5px);
+  transition-duration: 0.1s;
+  transition: all 1s ease-in-out;
+}
+
+button > a {
+  color: white;
+  text-decoration: none;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* --------------------------- Hero Section CSS --------------------------- */
+.hero__container {
+  width: 100%;
+}
+
+.hero__container--pink {
+  background-color: var(--nitro-pink);
+  text-align: center;
+  padding: 40px;
+}
+
+.hero__contents {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: start;
+}
+.hero__image {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.hero__contents p {
+  text-align: justify;
+  width: 40%;
+  padding: 2rem 0 4rem;
+}
+
+/* --------------------------- Products CSS --------------------------- */
+.product__container {
+  background-color: var(--neutral-light-gray);
+  width: 100%;
+  text-align: center;
+  padding: 6rem;
+}
+
+.product__container--wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product__items {
+  text-align: center;
+  padding: 6rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.product__items--card {
+  display: flex;
+  flex-direction: column;
+  width: 33rem;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  vertical-align: middle;
+  margin: 2rem 4rem;
+  background-color: white;
+}
+
+.product__card--image {
+  padding: 2rem 0 4rem;
+}
+
+.product__card--pink-block {
+  background-color: var(--nitro-pink);
+}
+
+.product__card--block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  border-radius: 10px;
+}
+
+.product__card--block div {
+  text-align: start;
+}
+
+.product__card h3 {
+  white-space: nowrap;
+  color: var(--graphite);
+}
+
+.product__card--size {
+  color: var(--gray);
+}
+
+.product__card--price {
+  color: var(--nitro-blue);
+  font-size: 3.3rem;
+  font-weight: 700;
+}
+
+.product__card--button {
+  padding: 4rem;
+}
+
+.product__card--button--wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product__card--button--copy {
+  position: absolute;
+  padding: 2.85rem;
+  width: 18rem;
+  background-color: var(--nitro-blue);
+  border: 0;
+  margin-top: 1.25rem;
+  margin-left: 1rem;
+}
+
+.product__card--button--original {
+  position: absolute;
+  padding: 1.5rem;
+  width: 18rem;
+  background-color: transparent;
+  border: 2px solid var(--graphite);
+}
+
+.product__card--button--original--animation:active {
+  transform: translate(5px, 5px);
+  transition-duration: 0.1s;
+  transition: all 1s ease-in-out;
+}
+
+/* --------------------------- Discount Banner CSS --------------------------- */
+.banner {
+  padding: 6rem;
+  margin: 6rem;
+}
+
+.banner__learn-more {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+}
+
+.banner__learn-more--contents {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.banner__learn-more--icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner__learn-more--image-wrapper {
+  position: relative;
+}
+
+.banner__learn-more--image-border {
+  border: 5px solid var(--nitro-blue);
+  text-align: center;
+  width: 40rem;
+  height: 100%;
+  padding: 6rem;
+  background-color: transparent;
+}
+
+.banner__learn-more--image-placeholder {
+  position: absolute;
+  background-image: url(../assets/images/coldbrewbackground.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 40rem;
+  height: 100%;
+  z-index: -1;
+  top: 20px;
+  left: 20px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(0deg);
+  }
+  from {
+    transform: rotate(360deg);
+  }
+}
+
+.banner__learn-more--animate__image:hover {
+  animation: spin 2s linear infinite;
+}
+
+.banner__discount {
+  text-align: center;
+}
+
+.banner__discount--width {
+  width: 90%;
+  padding-left: 10%;
+}
+
+// @keyframes flashing {
+//   to {
+//     background-color: var(--graphite);
+//   }
+//   from {
+//     background-color: var(--nitro-blue);
+//   }
+// }
+
+@keyframes flashing {
+  0% { 
+    background-color: var(--graphite); 
+  }
+  50% { 
+    background-color: var(--nitro-blue);  
+    animation-timing-function: ease-in-out; 
+  }
+  100% { 
+    background-color: var(--graphite);  
+    animation-timing-function: ease-in-out; 
+  }
+}
+
+.banner__discount--color {
+  background-color: var(--graphite);
+  color: white;
+  padding: 40px 60px;
+  margin: 14rem 0;
+  display: inline-block;
+  animation: flashing 2.5s ease-in-out infinite;
+  transition: all 2.5s ease-in-out;
+  -webkit-transition: all 2.5s ease-in-out;
+  -moz-transition: all 2.5s ease-in-out;
+  -o-transition: all 2.5s ease-in-out;
+}
+
+.banner__discount--text {
+  font-size: 4.5rem;
+  font-weight: 400;
+}
+
+.banner__discount--code {
+  font-weight: 700;
+}
+
+/* --------------------------- Footer CSS --------------------------- */
+.footer__container {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: var(--nitro-pink);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6rem 0;
+}
+
+.footer__container--image-opacity {
+  opacity: 25%;
+}
+
+.footer__container--image-top {
+  margin-bottom: 10rem;
+  margin-left: -3rem;
+}
+
+.footer__container--image-bottom {
+  margin-top: 10rem;
+  margin-right: -3rem;
+}
+
+.footer__container--section {
+  display: inline-block;
+  text-align: start;
+  vertical-align: middle;
+  padding: 0 16rem;
+}
+
+.footer__container--section h3 {
+  margin-bottom: 2rem;
+}
+
+.footer__container--section span a {
+  text-decoration: none;
+}
