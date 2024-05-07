@@ -59,54 +59,107 @@ article {
 .products {
   text-align: center;
   padding: 6rem 0;
+  display: flex;
+  justify-content: center;
 }
 
 .products__card {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   width: 33rem;
-  height: auto;
+  height: 100%;
   border-radius: 10px;
   box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
   text-align: center;
   vertical-align: middle;
   margin: 2rem 4rem;
-  padding: 4rem;
   background-color: white;
 }
 
+.products__card--image {
+  padding: 2rem 0 4rem;
+}
+
+.products__card--pink-block {
+  background-color: var(--nitro-pink);
+}
+
+.products__card--block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+}
+
+.products__card--block div {
+  text-align: start;
+}
+
 .products__card h3 {
-  margin:1rem;
-  padding: 2rem;
   white-space: nowrap;
+  color: var(--graphite)
+}
+
+.products__card--size {
+  color: var(--gray);
+  
 }
 
 .products__card--price {
   color: var(--nitro-blue);
   font-size: 3.3rem;
-  margin: 1rem;
+  font-weight: 700;
 }
 
 /* --------------------------- Discount Banner CSS --------------------------- */
-.discount__banner{
+.banner{
   width: 90%;
-  text-align: center;
   padding-left: 10%;
 }
 
-.discount__banner--color {
+.banner__learn-more {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner__learn-more--contents {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.banner__learn-more--icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.banner__learn-more--image {
+  background-image: url(../assets/images/coldbrewbackground.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 40rem;
+  height: 100%;
+  padding: 6rem;
+  text-align: center;
+}
+
+.banner__discount--color {
   background-color: var(--graphite);
   color: white;
   padding: 40px 60px;
-  margin: 160px 0;
+  margin: 14rem 0;
   display: inline-block;
 }
 
-.discount__banner--text {
+.banner__discount--text {
   font-size: 4.5rem;
   font-weight: 400;
 }
 
-.discount__banner--code {
+.banner__discount--code {
   font-weight: 700;
 }
 

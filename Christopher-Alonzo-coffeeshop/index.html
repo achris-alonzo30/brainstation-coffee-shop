@@ -13,9 +13,9 @@
   </head>
   <body>
     <!------------------------------- Header Section ------------------------------->
-    <header class="header-landing">
+    <header>
       <!------------ Header Logo --------------->
-      <nav class="header-nav-logo">
+      <nav class="header__nav--logo">
         <a href="../index.html">
           <img
             src="./assets/logos/coffee-beans-logo-and-footer.svg"
@@ -60,36 +60,56 @@
       <!------------------------------- Products Section ------------------------------->
       <article class="product__container" id="products">
         <h2>Our Products</h2>
-        <section  class="products">
+        <section class="products">
           <section class="products__card">
-            <img
-              src="./assets/images/coffeebeans.png"
-              alt="coffee beans"
-              height="280"
-            />
-            <h3 class="products__card--title">Coffee Beans</h3>
-            <p class="products__card--price">$18.99</p>
+            <div class="products__card--image">
+              <img
+                src="./assets/images/coffeebeans.png"
+                alt="coffee beans"
+                height="280"
+              />
+            </div>
+            <div class="products__card--pink-block products__card--block">
+              <div>
+                <h3 class="products__card--title">Coffee Beans</h3>
+                <p class="products__card--size">Pack of 3</p>
+              </div>
+              <p class="products__card--price">$19</p>
+            </div>
           </section>
 
           <section class="products__card">
-            <img
-              src="./assets/images/coldbrew.png"
-              alt="cold brew"
-              height="280"
-            />
-            <h3 class="products__card--title">Cold Brew</h3>
-            <p class="products__card--price">$4.99</p>
-
+            <div class="products__card--image">
+              <img
+                src="./assets/images/coldbrew.png"
+                alt="cold brew"
+                height="280"
+              />
+            </div>
+            <div class="products__card--pink-block products__card--block">
+              <div>
+                <h3 class="products__card--title">Cold Brew</h3>
+                <p class="products__card--size">1 can</p>
+              </div>
+              <p class="products__card--price">$5</p>
+            </div>
           </section>
 
           <section class="products__card">
-            <img
-              src="./assets/images/inhousebrew.png"
-              alt="in-house brew"
-              height="280"
-            />
-            <h3 class="products__card--title">In-house Brew</h3>
-            <p class="products__card--price">$2.99</p>
+            <div class="products__card--image">
+              <img
+                src="./assets/images/inhousebrew.png"
+                alt="in-house brew"
+                height="280"
+              />
+            </div>
+            <div class="products__card--pink-block products__card--block">
+              <div>
+                <h3 class="products__card--title">In-house Brew</h3>
+                <p class="products__card--size">1 cup</p>
+              </div>
+              <p class="products__card--price">$3</p>
+            </div>
           </section>
         </section>
 
@@ -100,20 +120,49 @@
       </article>
 
       <!------------------------------- Discount Banner Section --------------------------------->
-      <article class="discount__banner">
-        <section class="discount__banner--color">
-          <p class="discount__banner--text">
+      <article class="banner">
+        <section id="learn-more" class="banner__learn-more">
+          <div class="banner__learn-more--contents">
+            <h2>We're Different</h2>
+            <p>
+              We grow and roast our own beans. Every bean, every <br />
+              cup, every step of the way, we strive for excellence.
+            </p>
+            <div class="banner__learn-more--icons">
+              <img src="./assets/logos/planting.svg" alt="plants" width="50" />
+              <img
+                src="./assets/logos/coffee-beans.svg"
+                alt="beans"
+                width="50"
+              />
+              <img
+                src="./assets/logos/coffee-cup.svg"
+                alt="coffee"
+                width="50"
+              />
+            </div>
+            <button><a href="./index.html">Learn More</a></button>
+          </div>
+          <div class="banner__learn-more--image">
+            <img
+              src="./assets/images/tiltedcan.png"
+              alt="can-tilted"
+              height="280"
+            />
+          </div>
+        </section>
+
+        <section id="discount-banner" class="banner__discount--color">
+          <p class="banner__discount--text">
             Get 20% off your first order with code:
-            <span class="discount__banner--code"> FirstNitro </span>
+            <span class="banner__discount--code"> FirstNitro </span>
           </p>
         </section>
       </article>
-
     </main>
 
     <!------------------------------- Footer Section ------------------------------->
     <footer class="footer__container">
-
       <section id="address" class="footer__container--section">
         <h3>Address</h3>
         <p>503 Broadway Penthouse</p>
@@ -123,11 +172,11 @@
       <section id="hours" class="footer__container--section">
         <h3>Hours</h3>
         <p>
-          <b>Monday - Friday:</b> 
+          <b>Monday - Friday:</b>
           9am - 7pm
         </p>
         <p>
-          <b>Saturday - Sunday:</b> 
+          <b>Saturday - Sunday:</b>
           10am - 5pm
         </p>
       </section>
