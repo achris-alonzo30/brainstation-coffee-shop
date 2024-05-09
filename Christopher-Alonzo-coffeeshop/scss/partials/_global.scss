@@ -1,0 +1,118 @@
+/* --------------------------- Color Variables CSS --------------------------- */
+:root {
+  --nitro-blue: #5bacc3;
+  --nitro-pink: #fff0ed;
+  --neutral-light-gray: #f7f7f7;
+  --white: #fff;
+  --graphite: #393939;
+  --gray: #909090;
+}
+
+/* --------------------------- Elements CSS --------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+h1,
+h2 {
+  font-size: 6rem;
+  font-weight: 300;
+}
+
+h3,
+.header-nav h1 {
+  font-size: 3.3rem;
+  font-weight: 300;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li a,
+button {
+  font-size: 2.1rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--graphite);
+}
+
+p {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.p-italic {
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+/* --------------------------- Headers CSS --------------------------- */
+header {
+  background-color: var(--nitro-pink);
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav--logo a {
+  display: flex;
+}
+
+header nav a {
+  text-decoration: none;
+}
+
+header nav h1 {
+  font-size: 3.3em;
+  color: var(--graphite);
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  margin-top: 2rem;
+}
+
+.header__nav--links li a:hover {
+  color: var(--nitro-blue)
+}
+
+.header__nav--links li:nth-child(3) a {
+  color: var(--nitro-blue);
+}
+
+.header__nav--links li:nth-child(3) a:hover {
+  color: var(--graphite);
+}
+
+
+
+
+
+
+
+
+
+

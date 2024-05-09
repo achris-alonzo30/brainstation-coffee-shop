@@ -1,0 +1,210 @@
+/* --------------------------- Color Variables CSS --------------------------- */
+:root {
+  --nitro-blue: #5bacc3;
+  --nitro-pink: #fff0ed;
+  --neutral-light-gray: #f7f7f7;
+  --white: #fff;
+  --graphite: #393939;
+  --gray: #909090;
+}
+
+/* --------------------------- Elements CSS --------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+h1,
+h2 {
+  font-size: 6rem;
+  font-weight: 300;
+}
+
+h3,
+.header-nav h1 {
+  font-size: 3.3rem;
+  font-weight: 300;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li a,
+button {
+  font-size: 2.1rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--graphite);
+}
+
+p {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.p-italic {
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+/* --------------------------- Headers CSS --------------------------- */
+header {
+  background-color: var(--nitro-pink);
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav--logo a {
+  display: flex;
+}
+
+header nav a {
+  text-decoration: none;
+}
+
+header nav h1 {
+  font-size: 3.3em;
+  color: var(--graphite);
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  margin-top: 2rem;
+}
+
+.header__nav--links li a:hover {
+  color: var(--nitro-blue);
+}
+
+.header__nav--links li:nth-child(3) a {
+  color: var(--nitro-blue);
+}
+
+.header__nav--links li:nth-child(3) a:hover {
+  color: var(--graphite);
+}
+
+/* --------------------------- Hero Section CSS --------------------------- */
+.hero {
+  width: 100%;
+  height: 700px;
+  background-image: url(../assets/images/coffee-circle.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__title-container {
+  position: relative;
+}
+
+.hero__title-box {
+  position: absolute;
+  width: 30rem;
+  height: 100%;
+  bottom: 15px;
+  right: 15px;
+  border: 5px solid var(--nitro-blue);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__title-backdrop {
+  width: 300px;
+  height: 200px;
+  background-color: var(--graphite);
+}
+
+/* --------------------------- Hero Sub Nav Section CSS --------------------------- */
+.hero__sub-nav {
+  width: 100%;
+  height: 80px;
+  background-color: var(--graphite);
+}
+
+.hero__sub-nav-links {
+  text-align: center;
+  line-height: 80px;
+}
+
+.hero__sub-nav-links li {
+  display: inline-block;
+}
+
+.hero__sub-nav-links li a {
+  color: white;
+  border-left: 4px solid var(--nitro-blue);
+  padding: 0 2rem 0 2rem;
+}
+
+.hero__sub-nav-links li a:hover {
+  color: var(--nitro-blue);
+}
+
+/* --------------------------- Menu Section CSS --------------------------- */
+.menu__container {
+  width: 100%;
+  display: block;
+  padding: 4rem;
+  text-align: center;
+}
+
+.menu__container:nth-child(odd) {
+  background-color: var(--nitro-pink);
+}
+
+.menu__container:nth-child(even) {
+  background-color: var(--neutral-light-gray);
+}
+
+article > h3 {
+  text-align: center;
+  font-size: 3.3rem;
+  margin-top: 2rem;
+}
+
+.menu__item {
+  margin-top: 4rem;
+  text-align: center;
+  display: block;
+}
+
+.menu__item-description {
+  margin: 0 auto;
+  width: 30%;
+}
+
+.menu__item-price {
+  text-align: center;
+  color: var(--nitro-blue);
+  margin-bottom: 0;
+  margin-top: 1rem;
+}/*# sourceMappingURL=menu.css.map */
