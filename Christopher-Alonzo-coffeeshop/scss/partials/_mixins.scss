@@ -1,0 +1,45 @@
+@mixin hero-btn-styles {
+  position: relative;
+
+  &--copy {
+    position: absolute;
+    padding: 2.8rem;
+    width: 17.9rem;
+    background-color: var(--nitro-blue);
+    top: 0.6rem;
+    left: 0.6rem;
+    border: 0;
+  }
+
+  &--original {
+    background-color: transparent;
+    color: white;
+    width: 18rem;
+    padding: 1.5rem;
+    border: 2px solid var(--graphite);
+    position: absolute;
+  }
+
+  &--original--animation:active {
+    transform: translate(0.4rem, 0.4rem);
+  }
+}
+
+@mixin background-image-styles($url) {
+  background-image: url($url);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@mixin flex-styles ($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin height-width-styles ($height, $width) {
+  height: $height;
+  width: $width;
+}
